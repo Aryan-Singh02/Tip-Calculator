@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tipCalculator"
+        android:text="@string/tip_calculator"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amountText"
+        android:layout_below="@id/tipCalculator"
+        android:text="@string/enter_amount"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editAmount"
+        android:layout_below="@id/amountText"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:inputType="number"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tip"
+        android:layout_below="@id/editAmount"
+        android:text="@string/tip"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tipPercent"
+        android:layout_below="@id/tip"
+        android:max="20"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:layout_below="@id/tipPercent"
+        android:text="@string/final_amount"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/finalResult"
+        android:text=""
+        android:textStyle="normal"
+        android:textSize="40sp"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
